@@ -48,10 +48,17 @@
     <Compile Include="Input\DataInput.xaml.cs">
       <DependentUpon>DataInput.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LabelOutput.xaml.cs">
+      <DependentUpon>LabelOutput.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="Input\DataInput.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LabelOutput.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

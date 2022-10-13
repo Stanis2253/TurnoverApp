@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TurnoverApp.View.PagesFolder.MainPages
+namespace TurnoverApp.View.PagesFolder.InternalPages
 {
     /// <summary>
-    /// Логика взаимодействия для IndicatorsPage.xaml
+    /// Логика взаимодействия для DocumentPage.xaml
     /// </summary>
-    public partial class IndicatorsPage : Page
+    public partial class DocumentPage : Page
     {
-        public IndicatorsPage()
+        public DocumentPage()
         {
             InitializeComponent();
         }
