@@ -55,7 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="View\MainWin.xaml">
+    <Page Include="View\WindowsFolder\MainWin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -96,7 +96,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Logic\Manager.cs" />
-    <Compile Include="View\MainWin.xaml.cs">
+    <Compile Include="View\WindowsFolder\MainWin.xaml.cs">
       <DependentUpon>MainWin.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\PagesFolder\BasicPages\MainPage.xaml.cs">

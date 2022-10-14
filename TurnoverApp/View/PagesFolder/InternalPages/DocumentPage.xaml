@@ -4,11 +4,88 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TurnoverApp.View.PagesFolder.InternalPages"
+      xmlns:cc="clr-namespace:CustomElementControl;assembly=CustomElementControl"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="DocumentPage">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Margin="10" Height="450">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <cc:ComboboxInput Text="Выберите накладную"/>
+
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Content="Выберите первоначальную дату"/>
+
+                <DatePicker Grid.Row="1" x:Name="dpStart"/>
+
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Content="Выберите конечную дату"/>
+
+                <DatePicker Grid.Row="1" x:Name="dpEnd"/>
+
+            </Grid>
+
+            <Grid Grid.Row="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Content="Вывести"/>
+                    <Button Content="Сохранить" Grid.Column="1"/>
+                    <Button Content="Печать" Grid.Column="2"/>
+
+                </Grid>
+                
+            </Grid>
+
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <DataGrid IsReadOnly="True" AutoGenerateColumns="False" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Продукт" Width="*" Binding="{Binding Path= Product}" />
+                    <DataGridTextColumn Header="Категория" Width="*" Binding="{Binding Path= Category}"/>
+                    <DataGridTextColumn Header="Производитель" Width="*" Binding="{Binding Path= Manufacture}"/>
+                    <DataGridTextColumn Header="Цена" Width="*" Binding="{Binding Path= Price}"/>
+                    <DataGridTextColumn Header="Количество" Width="*" Binding="{Binding Path= Amount}"/>
+                    <DataGridTextColumn Header="Единица измерения" Width="*" Binding="{Binding Path= Unit}"/>
+                    <DataGridTextColumn Header="Дата" Width="*" Binding="{Binding Path= Date}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+
     </Grid>
 </Page>
