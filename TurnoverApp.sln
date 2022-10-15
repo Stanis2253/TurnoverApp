@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurnoverApp", "TurnoverApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomElementControl", "CustomElementControl\CustomElementControl.csproj", "{AF7F5055-A757-4F3E-BDE6-0CBC900AE370}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectSaa", "ProjectSaa\ProjectSaa.csproj", "{F983E38D-523C-45DB-AC73-23A955530514}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AF7F5055-A757-4F3E-BDE6-0CBC900AE370}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF7F5055-A757-4F3E-BDE6-0CBC900AE370}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF7F5055-A757-4F3E-BDE6-0CBC900AE370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F983E38D-523C-45DB-AC73-23A955530514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F983E38D-523C-45DB-AC73-23A955530514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F983E38D-523C-45DB-AC73-23A955530514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F983E38D-523C-45DB-AC73-23A955530514}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

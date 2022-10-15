@@ -91,6 +91,7 @@
       <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Logic\AuthorizationLog.cs" />
+    <Compile Include="Logic\Sorting.cs" />
     <Compile Include="Manufacture.cs">
       <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>

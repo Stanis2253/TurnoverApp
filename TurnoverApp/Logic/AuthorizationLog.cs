@@ -10,6 +10,18 @@ namespace TurnoverApp.Logic
     {
         public string Login { get; set; }
         public string Password { get; set; }
+        public AuthorizationLog(string login, string password)
+        {
+            Login = login;
+            Password = password;
+        }
+        public bool ComeIn(ref User user)
+        {
 
+        }
+        public User GerObj()
+        {
+            
+        }
     }
 }
