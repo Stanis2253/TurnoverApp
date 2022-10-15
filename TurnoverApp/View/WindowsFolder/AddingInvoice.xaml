@@ -1,0 +1,35 @@
+﻿<Window x:Class="TurnoverApp.View.WindowsFolder.AddingInvoice"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TurnoverApp.View.WindowsFolder"
+        xmlns:control="clr-namespace:CustomElementControl;assembly=CustomElementControl"
+        mc:Ignorable="d"
+        Title="Добавить" Height="600" Width="500">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <control:DataInput Title="Введите название"/>
+
+        <DatePicker Grid.Row="1" Margin="20"/>
+
+        <control:ButtonAmount Grid.Row="2" Width="200" Size="25"/>
+
+        <control:DataInput Grid.Row="3" Title="Введите цену"/>
+
+        <control:ComboboxInput Grid.Row="4" Title="Укажите поставщика"/>
+
+        <Grid Grid.Row="5">
+            <Button Width="250" Height="45" Content="Добавить"/>
+        </Grid>
+
+    </Grid>
+</Window>

@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="CustomElementControl.ButtonAmount"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CustomElementControl"
+             mc:Ignorable="d" 
+             d:DesignHeight="125" d:DesignWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Укажите количество" HorizontalAlignment="Center" />
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Content="-" FontSize="{Binding Path=Size}" Click="Reduce"/>
+            <TextBox Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" IsReadOnly="True" Text="{Binding Path=Count}" FontSize="{Binding Path=Size}"/>
+            <Button Grid.Column="2" Content="+" FontSize="{Binding Path=Size}" Click="Increase"/>
+
+        </Grid>
+      
+    </Grid>
+
+
+</UserControl>

@@ -45,6 +45,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ButtonAmount.xaml.cs">
+      <DependentUpon>ButtonAmount.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ComboboxInput.xaml.cs">
       <DependentUpon>ComboboxInput.xaml</DependentUpon>
     </Compile>
@@ -57,6 +60,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="ButtonAmount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ComboboxInput.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

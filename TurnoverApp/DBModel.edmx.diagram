@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f20aae99073b4aec8b3f725c79acc791" Name="Diagram1">
+        <EntityTypeShape EntityType="TradeDBModel.Category" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.Decommissioned" Width="1.5" PointX="5.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.Manufacture" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.MeasureUnits" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.Product" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.Provider" Width="1.5" PointX="6" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.Purchase" Width="1.5" PointX="8.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.Refund" Width="1.5" PointX="5.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.Sale" Width="1.5" PointX="5.25" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeDBModel.User" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="TradeDBModel.FK_Product_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK_Decommissioned_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK_Product_Manufacture" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK_Product_MeasureUnits" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK_Purchase_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK_Refund_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK_Sale_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeDBModel.FK_Purchase_Provider" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

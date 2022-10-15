@@ -30,12 +30,14 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
 
                 <Button Content="Обновить"/>
-                <Button Content="Добавить" Grid.Column="1"/>
-                <Button Content="Удалить" Grid.Column="2"/>
+            <Button Content="Добавить" Grid.Column="1"/>
+            <Button Content="Изменить" Grid.Column="2"/>
+            <Button Content="Удалить" Grid.Column="3"/>
 
             </Grid>
         </Grid>

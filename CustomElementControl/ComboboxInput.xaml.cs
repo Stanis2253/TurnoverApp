@@ -20,7 +20,7 @@ namespace CustomElementControl
     /// </summary>
     public partial class ComboboxInput : UserControl
     {
-        public string Text { get; set; }
+        public string Title { get; set; }
         public ComboboxInput()
         {
             InitializeComponent();

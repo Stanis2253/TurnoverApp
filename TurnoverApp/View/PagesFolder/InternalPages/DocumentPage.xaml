@@ -24,7 +24,7 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <cc:ComboboxInput Text="Выберите накладную"/>
+            <cc:ComboboxInput Title="Выберите накладную"/>
 
             <Grid Grid.Row="1">
                 <Grid.RowDefinitions>
